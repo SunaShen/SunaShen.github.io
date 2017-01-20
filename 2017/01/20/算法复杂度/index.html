@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="算法,数据结构," />
 
 
 
@@ -84,15 +84,22 @@
 
 
 
-<meta name="description" content="一个身在电子的程序猿">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sun_ds's blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="概况算法的复杂度分为算法时间复杂度和算法空间复杂度。
+时间复杂度是总运算次数表达式中受n的变化影响最大的那一项(不含系数)。
+（1）时间频度 一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多">
+<meta property="og:type" content="article">
+<meta property="og:title" content="算法复杂度">
+<meta property="og:url" content="http://yoursite.com/2017/01/20/算法复杂度/index.html">
 <meta property="og:site_name" content="Sun_ds's blog">
-<meta property="og:description" content="一个身在电子的程序猿">
+<meta property="og:description" content="概况算法的复杂度分为算法时间复杂度和算法空间复杂度。
+时间复杂度是总运算次数表达式中受n的变化影响最大的那一项(不含系数)。
+（1）时间频度 一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多">
+<meta property="og:updated_time" content="2017-01-20T08:13:25.545Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sun_ds's blog">
-<meta name="twitter:description" content="一个身在电子的程序猿">
+<meta name="twitter:title" content="算法复杂度">
+<meta name="twitter:description" content="概况算法的复杂度分为算法时间复杂度和算法空间复杂度。
+时间复杂度是总运算次数表达式中受n的变化影响最大的那一项(不含系数)。
+（1）时间频度 一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多">
 
 
 
@@ -120,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/20/算法复杂度/"/>
 
 
 
 
 
-  <title> Sun_ds's blog </title>
+  <title> 算法复杂度 | Sun_ds's blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -147,9 +154,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +235,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -265,10 +270,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/01/20/算法复杂度/" itemprop="url">
-                  算法复杂度
-                </a>
+                算法复杂度
               
             
           </h1>
@@ -330,9 +332,7 @@
       
 
       
-        
-          
-            <h3 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h3><p>算法的复杂度分为<strong>算法时间复杂度</strong>和<strong>算法空间复杂度</strong>。</p>
+        <h3 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h3><p>算法的复杂度分为<strong>算法时间复杂度</strong>和<strong>算法空间复杂度</strong>。</p>
 <p>时间复杂度是总运算次数表达式中受n的变化影响最大的那一项(不含系数)。</p>
 <p>（1）<strong>时间频度</strong> 一个算法执行所耗费的时间，从理论上是不能算出来的，必须上机运行测试才能知道。但我们不可能也没有必要对每个算法都上机测试，只需知道哪个算法花费的时间多，哪个算法花费的时间少就可以了。并且一个算法花费的时间与算法中语句的执行次数成正比例，哪个算法中语句执行次数多，它花费时间就多。一个算法中的语句执行次数称为语句频度或时间频度。记为T(n)。</p>
 <p>（2）<strong>时间复杂度</strong> 在刚才提到的时间频度中，n称为问题的规模，当n不断变化时，时间频度T(n)也会不断变化。但有时我们想知道它变化时呈现什么规律。为此，我们引入时间复杂度概念。 一般情况下，算法中基本操作重复执行的次数是问题规模n的某个函数，用T(n)表示，若有某个辅助函数f(n),使得当n趋近于无穷大时，T(n)/f(n)的极限值为不等于零的常数，则称f(n)是T(n)的同数量级函数。记作T(n)=Ｏ(f(n)),称Ｏ(f(n)) 为算法的渐进时间复杂度，简称时间复杂度。</p>
@@ -388,180 +388,64 @@
 <p>其中c是一个常量，如果一个算法的复杂度为c 、 $\log_2n$ 、n 、 n*$\log_2n$ ,那么这个算法时间效率比较高 ，如果是 $2^n$ , $3^n$ ,n!，那么稍微大一些的n就会令这个算法不能动了，居于中间的几个则差强人意。</p>
 <p>参考：<br><a href="http://blog.csdn.net/firefly_2002/article/details/8008987" target="_blank" rel="external">http://blog.csdn.net/firefly_2002/article/details/8008987</a><br><a href="http://blog.csdn.net/zolalad/article/details/11848739" target="_blank" rel="external">http://blog.csdn.net/zolalad/article/details/11848739</a></p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/27/搭建github+hexo博客/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Sun_ds">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/uploads/my_head.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Sun_ds's blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Sun_ds's blog" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/27/搭建github+hexo博客/" itemprop="url">
-                  搭建github+hexo博客
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-27T00:40:09+08:00">
-                2016-12-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/算法/" rel="tag"># 算法</a>
           
-            
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
-
-          
-
-          
-          
-             <span id="/2016/12/27/搭建github+hexo博客/" class="leancloud_visitors" data-flag-title="搭建github+hexo博客">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h3 id="这是我的第一篇博客"><a href="#这是我的第一篇博客" class="headerlink" title="这是我的第一篇博客"></a><center><strong>这是我的第一篇博客</strong></center></h3><p>最进发现很多大牛都有自己的技术博客，就想自己也搞一个。<br>了解了一下，主要分网上现成的博客（CSDN，博客园等）和静态博客（gihub+nexo等），所以就一时脑热按照<a href="http://www.jianshu.com/p/701b1095da11" target="_blank" rel="external">教程</a> 来搭建自己的博客了。跟着大牛的步骤一步一步执行下来。最终完成了自己博客的搭建（开心）。</p>
-<p>期间遇到了一个问题就是在自己电脑预览　<strong><a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></strong>　的时候一直预览不了，在经过一番度娘之后终于找到了问题，原来是自己的 <strong>internet信息服务（IIS）管理器</strong> 没有开启。就按照<a href="http://jingyan.baidu.com/album/db55b6099575154ba30a2f35.html?picindex=1" target="_blank" rel="external">这个</a>打开了 <strong>internet信息服务（IIS）管理器</strong> 。然后就可以访问了。</p>
-<p>怀着激动的心情写下我这第一篇博客，希望以后能养成良好的记录的习惯。</p>
-<p>搭建这个博客花费了我1个小时左右（毕竟中间出了些小插曲）。</p>
-<p>明天还有早课，就先这样吧。我要准备撤了~</p>
-<center>–2016-12-27–</center>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/12/27/搭建github+hexo博客/" rel="next" title="搭建github+hexo博客">
+                <i class="fa fa-chevron-left"></i> 搭建github+hexo博客
+              </a>
+            
+          </div>
 
-<hr>
-<h3 id="折腾后续"><a href="#折腾后续" class="headerlink" title="折腾后续"></a><center><strong>折腾后续</strong></center></h3><p>在昨天晚上写好这个博客之后，准备部署到github的时候，又出现了一些小插曲，在按照教程输入自己github网址之后，使用<br><code>hexo generate , hexo deployer </code>之后，出现了<code>ERROR Deployer not found: git</code>的错误。有说修改 <strong><em>_config.yml</em></strong> 中的<code>deploy:type</code>为<code>git,github</code>的，貌似hexo3.0版本之后就改成了git了，但是试了之后还是不行。后来又继续度娘，看到一个回答说要把<br><code>deploy:repo</code>中的github仓库地址中的<code>https</code>https改成<code>http</code>。修改之后再执行<code>npm install hexo-deployer-git –save</code>然后重复上面步骤进行部署，果然就成功了！！可以直接访问了<a href="https://sunashen.github.io/" target="_blank" rel="external">https://sunashen.github.io/</a> 然后才去睡觉</p>
-<p>今天白天发现自己的主题使用的是默认的主题，不是那么的好看就准备去换一个好看的主题。最后发现 <strong>nexT</strong> 主题还是挺好看的，就按照<a href="http://www.tuicool.com/articles/zeIZJzv" target="_blank" rel="external">这个</a>去换成了 <strong>nexT</strong> 主题。然后又参考<a href="http://theme-next.iissnan.com/theme-settings.html" target="_blank" rel="external">这个</a>自己修改了一些配置，添加了自己的头像等等，并通过<a href="https://notes.wanghao.work/2015-10-21-%E4%B8%BANexT%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E9%98%85%E8%AF%BB%E9%87%8F%E7%BB%9F%E8%AE%A1%E5%8A%9F%E8%83%BD.html#%E9%85%8D%E7%BD%AELeanCloud" target="_blank" rel="external">这个</a>来增加了一个访问量的功能。</p>
-<p>看起来这个博客算是搭建差不多就结束了。后面马上就要期末考试了。所以后面一段时间就先去复习啦。等考试完再来总结一下自己之前做过的东西以及一些学习感悟吧~</p>
-<center>–2016-12-28–</center>
+          <span class="post-nav-divider"></span>
 
-<hr>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -569,6 +453,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -588,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/my_head.jpg"
@@ -658,6 +555,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概况"><span class="nav-number">1.</span> <span class="nav-text">概况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#时间复杂度"><span class="nav-number">2.</span> <span class="nav-text">时间复杂度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常见算法时间复杂度举例："><span class="nav-number">3.</span> <span class="nav-text">常见算法时间复杂度举例：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#经验规则"><span class="nav-number">4.</span> <span class="nav-text">经验规则</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
@@ -763,6 +676,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 
